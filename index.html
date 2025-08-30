@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bulb Toggler</title>
+    <title>Mood Switcher</title>
     <style>
       body {
         background-color: rgb(154, 158, 158);
@@ -90,5 +90,23 @@
       <button class="btn-angry">Angry</button>
       <br />
     </div>
+    <script>
+      const happy = document.querySelector(".btn-happy");
+      const sad = document.querySelector(".btn-sad");
+      const angry = document.querySelector(".btn-angry");
+      const image = document.querySelector(".image");
+
+      happy.addEventListener("click", function () {
+        image.src = `happy.png`;
+      });
+
+      sad.addEventListener("click", function () {
+        image.src = `sad.png`;
+      });
+
+      angry.addEventListener("click", function () {
+        image.src = `angry.png`;
+      });
+    </script>
   </body>
 </html>
